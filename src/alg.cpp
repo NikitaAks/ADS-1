@@ -5,8 +5,8 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
-for (int i = 2; i < value; i++) {
-        if (value % i == 0) {
+for (int j = 2; j < value; j++) {
+        if (value % j == 0) {
             return false;
         }
     }
