@@ -15,6 +15,15 @@ for (int i = 2; i < value; i++) {
 
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
+int chislo = 0;
+    int val = 1;
+    while (chislo != n) {
+        val++;
+        if (checkPrime(val) == true) {
+            chislo++;
+        }
+    }
+    return val;
 }
 
 uint64_t nextPrime(uint64_t value) {
@@ -39,4 +48,11 @@ return j;
 
 uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
+uint64_t otv = 0;
+    for (uint64_t i = 2; i < hbound; i++) {
+        if (checkPrime(i)) {
+            otv += i;
+        }
+    }
+    return otv;
 }
